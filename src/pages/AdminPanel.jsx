@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Users, Search, Filter, UserCog, ShieldCheck, Settings, UserPlus, Trash2, Edit, ChevronDown } from 'lucide-react';
-import { Card, CardContent } from '../components/ui_temp/card.js';
-import { Button } from '../components/ui_temp/button.js';
+import { Card, CardContent } from '../components/ui/card.js';
+import { Button } from '../components/ui/button.js';
 
 // Helmsman Nexus – Admin Panel
 // Theme adjusted to match the "Soft Glass" regulatory templates screen

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Card, CardContent } from '../components/ui_temp/card.js';
-import { Button } from '../components/ui_temp/button.js';
-import { Input } from '../components/ui_temp/input.jsx';
+import { Card, CardContent } from '../components/ui/card.js';
+import { Button } from '../components/ui/button.js';
+import { Input } from '../components/ui/input.jsx';
 import { motion } from 'framer-motion';
 import { FlaskConical, AlertTriangle, CheckCircle2, XCircle, FileText } from 'lucide-react';
 
