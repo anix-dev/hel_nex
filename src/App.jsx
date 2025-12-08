@@ -13,6 +13,7 @@ import PredictedApprovalTimelineEngine from './pages/PredictedApprovalTimelineEn
 import RegulatoryRuleTablesAdmin from './pages/RegulatoryRuleTablesAdmin';
 import RegulatoryTemplateAdmin from './pages/RegulatoryTemplateAdmin';
 import RegulatoryTemplateUploader from './pages/RegulatoryTemplateUploader';
+import Footer from './pages/Footer';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         {/* Redirect unknown routes to home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+         <Footer />
     </Router>
   );
 }
