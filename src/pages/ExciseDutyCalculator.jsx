@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, CardContent } from '../components/ui/card.jsx';
-import { Button } from '../components/ui/button.js';
+import { Button } from '../components/ui/button.jsx';
 import { Input } from '../components/ui/input.jsx';
 import { motion } from 'framer-motion';
 import { Calculator, Percent, TrendingUp, FileText, Settings } from 'lucide-react';

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Card, CardContent } from '../components/ui/card.jsx';
-import { Button } from '../components/ui/button.js';
+import { Button } from '../components/ui/button.jsx';
 import { motion } from 'framer-motion';
 import {
   UploadCloud,
