@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Table, Sparkles, Globe2, Filter, Plus, Trash2, Save, Edit3 } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import { Button } from '../components/ui/button';
 
 // Helmsman Nexus – Regulatory Rule Tables Admin
 // Theme updated to match the attached "Soft Glass" regulatory templates screen

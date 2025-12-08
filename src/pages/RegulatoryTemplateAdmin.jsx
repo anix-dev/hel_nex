@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { UploadCloud, ShieldCheck, Clock, Globe2, Trash2, Edit3 } from 'lucide-react';
-// import { Card, CardContent } from '@/components/ui/card';
-// import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import { Button } from '../components/ui/button';
 
 // Helmsman Nexus – Regulatory Template Admin (Soft Glass Theme)
 // Theme updated to match attached UI screenshot
