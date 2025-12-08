@@ -30,7 +30,7 @@ function App() {
         <Route path="/global-regulatory-map" element={<GlobalRegulatoryMap />} />
         <Route path="/predicted-approval-timeline-engine" element={<PredictedApprovalTimelineEngine />} />
         <Route path="/regulatory-rule-tables-admin" element={<RegulatoryRuleTablesAdmin />} />
-        {/* <Route path="/regulatory-template-admin" element={<RegulatoryTemplateAdmin />} />
+         <Route path="/regulatory-template-admin" element={<RegulatoryTemplateAdmin />} />
         <Route path="/regulatory-template-uploader" element={<RegulatoryTemplateUploader />} />
         
         {/* Redirect unknown routes to home */}
