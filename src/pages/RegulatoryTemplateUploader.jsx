@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Card, CardContent } from '../components/ui/card.js';
+import { Card, CardContent } from '../components/ui/card.jsx';
 import { Button } from '../components/ui/button.js';
 import { motion } from 'framer-motion';
 import {

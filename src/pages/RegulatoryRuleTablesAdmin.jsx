@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Table, Sparkles, Globe2, Filter, Plus, Trash2, Save, Edit3 } from 'lucide-react';
-import { Card, CardContent } from '../components/ui/card.js';
+import { Card, CardContent } from '../components/ui/card.jsx';
 import { Button } from '../components/ui/button.js';
 
 // Helmsman Nexus – Regulatory Rule Tables Admin
