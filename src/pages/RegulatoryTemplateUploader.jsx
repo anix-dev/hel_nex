@@ -14,6 +14,7 @@ import {
   Globe,
 } from 'lucide-react';
 
+
 export default function RegulatoryTemplateUploader() {
   const [theme, setTheme] = useState<'soft' | 'neon'>('soft');
   const [templates, setTemplates] = useState([
