@@ -98,9 +98,7 @@ export default function ExportDocumentationAutomation() {
               )}
             </div>
 
-            <p className="text-[11px] text-slate-500">
-              Developer Note: Generated documents are version-controlled and securely stored. Integrate with document management API or AWS S3 bucket.
-            </p>
+          
           </CardContent>
         </Card>
 

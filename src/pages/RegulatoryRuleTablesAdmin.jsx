@@ -287,10 +287,7 @@ export default function RegulatoryRuleTablesAdmin() {
             </table>
           </div>
 
-          <p className="text-[11px] text-slate-400 mt-3">
-            Developer note: Persist this table to your rules configuration store (PostgreSQL, DynamoDB or a config
-            service). Each row should map to a rule object consumed by the excise, label and formula engines.
-          </p>
+     
         </CardContent>
       </Card>
     </motion.div>

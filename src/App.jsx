@@ -14,6 +14,7 @@ import RegulatoryRuleTablesAdmin from './pages/RegulatoryRuleTablesAdmin';
 import RegulatoryTemplateAdmin from './pages/RegulatoryTemplateAdmin';
 import RegulatoryTemplateUploader from './pages/RegulatoryTemplateUploader';
 import Footer from './pages/Footer';
+import Ldashboard from './pages/Ldashboard';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/landingdashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Ldashboard />} />
         <Route path="/admin-panel" element={<AdminPanel />} />
         <Route path="/digital-product-passport" element={<DigitalProductPassport />} />
         <Route path="/distributor-network" element={<DistributorNetwork />} />

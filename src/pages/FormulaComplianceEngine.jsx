@@ -98,9 +98,6 @@ export default function FormulaComplianceEngine() {
               Run Compliance Check
             </Button>
 
-            <p className="text-[11px] text-slate-500 leading-relaxed">
-              Developer Note: Plug these inputs into API to validate per-market rules. Thresholds are editable by admin.
-            </p>
           </CardContent>
         </Card>
 

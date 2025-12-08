@@ -191,12 +191,7 @@ export default function AdminPanel() {
             <div className="h-8 w-8 rounded-full bg-emerald-50 flex items-center justify-center">
               <UserCog className="h-4 w-4 text-emerald-500" />
             </div>
-            <div>
-              <h3 className="text-sm font-semibold text-slate-900">Role-based access</h3>
-              <p className="text-[11px] text-slate-500 mt-1">
-                Define Admin, Manager, Developer, and Viewer roles with clear responsibilities.
-              </p>
-            </div>
+           
           </CardContent>
         </Card>
 

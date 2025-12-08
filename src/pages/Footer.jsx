@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   const routes = [
     { path: "/login", label: "Login" },
-    { path: "/dashboard", label: "Dashboard" },
+      { path: "/dashboard", label: "Dashboard" },
+    { path: "/landingdashboard", label: "Label Upload & Compliance" },
+  
     { path: "/admin-panel", label: "Admin Panel" },
     { path: "/digital-product-passport", label: "Digital Product Passport" },
     { path: "/distributor-network", label: "Distributor Network" },

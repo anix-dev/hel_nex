@@ -16,15 +16,15 @@ import {
 
 
 export default function RegulatoryTemplateUploader() {
-  const [theme, setTheme] = useState<'soft' | 'neon'>('soft');
+  const [theme, setTheme] = useState('soft');
   const [templates, setTemplates] = useState([
     { id: 1, name: 'TTB Export Template', region: 'United States', lastUpdated: '2025-11-20', fileType: 'PDF' },
     { id: 2, name: 'HMRC Duty Declaration', region: 'United Kingdom', lastUpdated: '2025-10-05', fileType: 'XLSX' },
     { id: 3, name: 'EU Customs Certificate', region: 'European Union', lastUpdated: '2025-09-18', fileType: 'DOCX' },
   ]);
-  const [file, setFile] = useState<File | null>(null);
+  const [file, setFile] = useState(null);
   const [dragging, setDragging] = useState(false);
-  const fileInputRef = useRef<HTMLInputElement>(null);
+  const fileInputRef = useRef(null);
 
   const isSoft = theme === 'soft';
 

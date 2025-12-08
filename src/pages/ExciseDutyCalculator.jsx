@@ -82,9 +82,6 @@ export default function ExciseDutyCalculator() {
               Calculate Duties
             </Button>
 
-            <p className="text-[11px] text-slate-500 leading-relaxed">
-              Developer Note: Use editable tax tables so admins can update rules without code deployments.
-            </p>
           </CardContent>
         </Card>
 
