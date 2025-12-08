@@ -5,7 +5,11 @@ import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 
 // Helmsman Nexus – Regulatory Template Admin (Soft Glass Theme)
+
+
 // Theme updated to match attached UI screenshot
+
+
 
 export default function RegulatoryTemplateAdmin() {
   const templates = [
