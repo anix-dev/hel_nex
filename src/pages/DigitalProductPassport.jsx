@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Card, CardContent } from '../components/ui/card.jsx';
-import { Button } from '../components/ui/button';
+import { Card, CardContent } from '../components/ui_temp/card.js';
+import { Button } from '../components/ui_temp/button.js';
 import { motion } from 'framer-motion';
 import {
   FileText,
