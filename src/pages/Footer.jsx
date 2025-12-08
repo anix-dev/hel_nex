@@ -18,11 +18,13 @@ export default function Footer() {
   ];
 
   return (
-    <footer style={{ padding: "20px", background: "#f5f5f5" }}>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+    <footer className="w-full bg-gray-100 py-8 border-t">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 px-4">
         {routes.map((r) => (
           <Link key={r.path} to={r.path}>
-            <button style={{ padding: "8px 12px" }}>{r.label}</button>
+            <div className="bg-white text-gray-700 px-4 py-2 rounded-xl shadow hover:shadow-md hover:bg-gray-50 transition cursor-pointer text-center text-sm font-medium">
+              {r.label}
+            </div>
           </Link>
         ))}
       </div>
