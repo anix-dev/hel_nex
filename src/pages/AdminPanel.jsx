@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Users, Search, Filter, UserCog, ShieldCheck, Settings, UserPlus, Trash2, Edit, ChevronDown } from 'lucide-react';
-import { Card, CardContent } from '../components/ui/card';
+import { Card, CardContent } from '../components/ui/card.jsx';
 import { Button } from '../components/ui/button';
 
 // Helmsman Nexus – Admin Panel
