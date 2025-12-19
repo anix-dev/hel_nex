@@ -39,7 +39,6 @@ function App() {
         {/* Redirect unknown routes to home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-         <Footer />
     </Router>
   );
 }

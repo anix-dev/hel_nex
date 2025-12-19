@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from './Footer';
 
 
 function Login() {
@@ -83,115 +84,119 @@ function Header({ theme, setTheme }) {
   const isSoft = theme === 'soft-glass';
 
   return (
+    <>
+      <header className="flex items-center justify-between gap-4">
 
-    <header className="flex items-center justify-between gap-4">
-
-      <div className="flex items-center gap-3 mr">
-
-        <div
-
-          className={`w-9 h-9 rounded-xl flex items-center justify-center text-xs font-semibold tracking-wide ${
-
-            isSoft
-
-              ? 'bg-slate-900 text-slate-50 shadow-md'
-
-              : 'bg-gradient-to-br from-[#7b2ff7] to-[#00a6fb] text-white shadow-[0_0_18px_rgba(123,47,247,0.7)]'
-
-          }`}
-
-        >
-
-          HN
-
-        </div>
-
-        <div>
-
-          <div className={`text-base font-semibold ${isSoft ? 'text-slate-900' : 'text-slate-50'}`}>
-
-            Helmsman Nexus
-
-          </div>
+        <div className="flex items-center gap-3 mr">
 
           <div
 
-            className={`text-[11px] uppercase tracking-[0.16em] ${
+            className={`w-9 h-9 rounded-xl flex items-center justify-center text-xs font-semibold tracking-wide ${
 
-              isSoft ? 'text-slate-500' : 'text-slate-400'
+              isSoft
+
+                ? 'bg-slate-900 text-slate-50 shadow-md'
+
+                : 'bg-gradient-to-br from-[#7b2ff7] to-[#00a6fb] text-white shadow-[0_0_18px_rgba(123,47,247,0.7)]'
 
             }`}
 
           >
 
-            RegTech • Export Accelerator
+            HN
+
+          </div>
+
+          <div>
+
+            <div className={`text-base font-semibold ${isSoft ? 'text-slate-900' : 'text-slate-50'}`}>
+
+              Helmsman Nexus
+
+            </div>
+
+            <div
+
+              className={`text-[11px] uppercase tracking-[0.16em] ${
+
+                isSoft ? 'text-slate-500' : 'text-slate-400'
+
+              }`}
+
+            >
+
+              RegTech • Export Accelerator
+
+            </div>
 
           </div>
 
         </div>
 
-      </div>
 
+        <div className="flex items-center gap-3 mr-20">
 
-      <div className="flex items-center gap-3 mr-20">
+          <span className={`hidden md:inline text-xs ${isSoft ? 'text-slate-500' : 'text-slate-400'}`}>
 
-        <span className={`hidden md:inline text-xs ${isSoft ? 'text-slate-500' : 'text-slate-400'}`}>
+            Theme
 
-          Theme
+          </span>
 
-        </span>
+          <div
 
-        <div
+            className={`flex items-center text-[11px] rounded-full border px-1 py-1 ${
 
-          className={`flex items-center text-[11px] rounded-full border px-1 py-1 ${
-
-            isSoft ? 'border-slate-200 bg-white/70 shadow-sm' : 'border-slate-700 bg-slate-900/50'
-
-          }`}
-
-        >
-
-          <button
-
-            onClick={() => setTheme('soft-glass')}
-
-            className={`px-3 py-1 rounded-full text-xs font-medium ${
-
-              theme === 'soft-glass' ? 'bg-slate-900 text-slate-50 shadow-sm' : 'text-slate-500'
+              isSoft ? 'border-slate-200 bg-white/70 shadow-sm' : 'border-slate-700 bg-slate-900/50'
 
             }`}
 
           >
 
-            Soft Glass
+            <button
 
-          </button>
+              onClick={() => setTheme('soft-glass')}
 
-          <button
+              className={`px-3 py-1 rounded-full text-xs font-medium ${
 
-            onClick={() => setTheme('neon-dark')}
+                theme === 'soft-glass' ? 'bg-slate-900 text-slate-50 shadow-sm' : 'text-slate-500'
 
-            className={`px-3 py-1 rounded-full text-xs font-medium ${
+              }`}
 
-              theme === 'neon-dark'
+            >
 
-                ? 'bg-gradient-to-r from-[#7b2ff7] to-[#00a6fb] text-white shadow-[0_0_18px_rgba(123,47,247,0.6)]'
+              Soft Glass
 
-                : 'text-slate-500'
+            </button>
 
-            }`}
+            <button
 
-          >
+              onClick={() => setTheme('neon-dark')}
 
-            Neon Hybrid
+              className={`px-3 py-1 rounded-full text-xs font-medium ${
 
-          </button>
+                theme === 'neon-dark'
+
+                  ? 'bg-gradient-to-r from-[#7b2ff7] to-[#00a6fb] text-white shadow-[0_0_18px_rgba(123,47,247,0.6)]'
+
+                  : 'text-slate-500'
+
+              }`}
+
+            >
+
+              Neon Hybrid
+
+            </button>
+
+          </div>
 
         </div>
 
-      </div>
+      </header>
 
-    </header>
+      <Footer />
+      
+    </>
 
   );
 

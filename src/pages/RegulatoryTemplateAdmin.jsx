@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { UploadCloud, ShieldCheck, Clock, Globe2, Trash2, Edit3 } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card.jsx';
 import { Button } from '../components/ui/button.jsx';
+import Footer from './Footer.jsx';
 
 // Helmsman Nexus – Regulatory Template Admin (Soft Glass Theme)
 
@@ -29,24 +30,28 @@ export default function RegulatoryTemplateAdmin() {
       transition={{ duration: 0.6 }}
     >
       {/* Header */}
-      <div className="flex items-center justify-between mb-10">
-        <div>
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-white text-xs font-semibold">
-              HN
-            </span>
-            Helmsman Nexus
-          </h1>
-          <p className="text-xs md:text-sm text-slate-500 mt-1">
-            Admin · Upload & manage regulatory export / customs templates
-          </p>
+      <>
+        <div className="flex items-center justify-between mb-10">
+          <div>
+            <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-white text-xs font-semibold">
+                HN
+              </span>
+              Helmsman Nexus
+            </h1>
+            <p className="text-xs md:text-sm text-slate-500 mt-1">
+              Admin · Upload & manage regulatory export / customs templates
+            </p>
+          </div>
+
+          <div className="flex items-center gap-2 text-xs border border-slate-200 bg-white rounded-full px-3 py-1 shadow-sm">
+            <span className="text-slate-500">Theme</span>
+            <span className="font-semibold text-slate-800">Soft Glass</span>
+          </div>
         </div>
 
-        <div className="flex items-center gap-2 text-xs border border-slate-200 bg-white rounded-full px-3 py-1 shadow-sm">
-          <span className="text-slate-500">Theme</span>
-          <span className="font-semibold text-slate-800">Soft Glass</span>
-        </div>
-      </div>
+        <Footer />
+      </>
 
       {/* Upload Zone */}
       <Card className={`${cardStyle} mb-10`}>

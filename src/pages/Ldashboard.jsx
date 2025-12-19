@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
 import 'react-circular-progressbar/dist/styles.css';
+import Footer from './Footer';
 
 
 // Helmsman Nexus – Segmented Gradient Gauge for Compliance Score
@@ -115,26 +116,30 @@ function Header({ theme, setTheme }) {
   const isSoft = theme === 'soft-glass';
 
   return (
+    <>
+      <header className="flex items-center justify-between mb-4">
 
-    <header className="flex items-center justify-between mb-4">
+        <div>
 
-      <div>
+          <h1 className={`text-2xl font-bold ${isSoft ? 'text-slate-800' : 'text-white'}`}>Helmsman Nexus Dashboard</h1>
 
-        <h1 className={`text-2xl font-bold ${isSoft ? 'text-slate-800' : 'text-white'}`}>Helmsman Nexus Dashboard</h1>
+          <p className={`text-sm ${isSoft ? 'text-slate-500' : 'text-slate-400'}`}>Compliance, AI Predictions & Global Readiness</p>
 
-        <p className={`text-sm ${isSoft ? 'text-slate-500' : 'text-slate-400'}`}>Compliance, AI Predictions & Global Readiness</p>
+        </div>
 
-      </div>
+        <select value={theme} onChange={(e) => setTheme(e.target.value)} className="border rounded px-3 py-1 text-sm">
 
-      <select value={theme} onChange={(e) => setTheme(e.target.value)} className="border rounded px-3 py-1 text-sm">
+          <option value="soft-glass">Soft Glass</option>
 
-        <option value="soft-glass">Soft Glass</option>
+          <option value="neon-dark">Neon Hybrid</option>
 
-        <option value="neon-dark">Neon Hybrid</option>
+        </select>
 
-      </select>
+      </header>
 
-    </header>
+      <Footer />
+      
+    </>
 
   );
 

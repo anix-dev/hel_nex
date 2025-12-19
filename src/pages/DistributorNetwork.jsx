@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Search, Filter, Globe2, Star, ArrowRight, Building2 } from 'lucide-react';
+import Footer from './Footer';
 
 // Lightweight UI primitives so this file is self-contained
 function Card({ children, className = '' }) {
@@ -45,22 +46,27 @@ export default function DistributorNewtwork() {
       transition={{ duration: 0.6 }}
     >
       {/* Top Bar */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
-        <div>
-          <h1 className="text-2xl font-semibold tracking-tight">Helmsman Nexus</h1>
-          <p className="text-xs text-slate-500 mt-1">Where Compliance, Data & Distribution Connect</p>
-        </div>
-        <div className="flex items-center gap-3 text-xs">
-          <div className="flex rounded-full bg-slate-100 p-1">
-            <button className="px-3 py-1 rounded-full bg-slate-900 text-white text-[11px]">Label Check</button>
-            <button className="px-3 py-1 rounded-full text-slate-600">Product Passport</button>
+      <>
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
+          <div>
+            <h1 className="text-2xl font-semibold tracking-tight">Helmsman Nexus</h1>
+            <p className="text-xs text-slate-500 mt-1">Where Compliance, Data & Distribution Connect</p>
           </div>
-          <div className="flex items-center gap-2 text-slate-500 border border-slate-200 rounded-full px-3 py-1 bg-white/80">
-            <span className="text-[11px]">Theme</span>
-            <span className="text-[11px] font-medium text-slate-800">Soft Glass</span>
+          <div className="flex items-center gap-3 text-xs">
+            <div className="flex rounded-full bg-slate-100 p-1">
+              <button className="px-3 py-1 rounded-full bg-slate-900 text-white text-[11px]">Label Check</button>
+              <button className="px-3 py-1 rounded-full text-slate-600">Product Passport</button>
+            </div>
+            <div className="flex items-center gap-2 text-slate-500 border border-slate-200 rounded-full px-3 py-1 bg-white/80">
+              <span className="text-[11px]">Theme</span>
+              <span className="text-[11px] font-medium text-slate-800">Soft Glass</span>
+            </div>
           </div>
         </div>
-      </div>
+
+        <Footer />
+                
+      </>
 
       <div className="grid lg:grid-cols-[2fr,1.1fr] gap-8 mb-10">
         {/* Left: Distributor overview & table shell */}

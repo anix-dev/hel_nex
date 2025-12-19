@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from './Footer';
 
 
 // Helmsman Nexus - Full Enhanced Mockup
@@ -263,110 +264,114 @@ function Header({
   const isSoft = theme === 'soft-glass';
 
   return (
+   <>
+      <header className="flex items-center justify-between relative z-10">
 
-    <header className="flex items-center justify-between relative z-10">
+        <div className="flex items-center gap-4">
 
-      <div className="flex items-center gap-4">
+          <div
 
-        <div
+            className={
 
-          className={
+              isSoft
 
-            isSoft
+                ? 'w-12 h-12 rounded-2xl glass-card flex items-center justify-center'
 
-              ? 'w-12 h-12 rounded-2xl glass-card flex items-center justify-center'
+                : 'w-12 h-12 rounded-2xl neon-glow flex items-center justify-center'
 
-              : 'w-12 h-12 rounded-2xl neon-glow flex items-center justify-center'
+            }
 
-          }
+            style={
 
-          style={
+              isSoft
 
-            isSoft
+                ? {}
 
-              ? {}
+                : { background: 'linear-gradient(135deg,#7b2ff7 0%,#00A6FB 100%)' }
 
-              : { background: 'linear-gradient(135deg,#7b2ff7 0%,#00A6FB 100%)' }
-
-          }
-
-        >
-
-          <span className={isSoft ? 'text-slate-800 font-bold hn-title' : 'text-white font-bold hn-title'}>HN</span>
-
-        </div>
-
-        <div>
-
-          <h1 className={`text-xl font-semibold hn-title ${isSoft ? 'text-slate-900' : 'text-white'}`}>
-
-            Helmsman Nexus
-
-          </h1>
-
-          <p className={isSoft ? 'text-sm text-slate-500' : 'text-sm text-slate-300'}>
-
-            Where Compliance, Data & Distribution Connect
-
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div className="flex items-center gap-4">
-
-        <div className="hidden md:flex items-center gap-2 rounded-full bg-slate-100/60 px-1 py-1 border border-slate-200 shadow-sm">
-
-          <button
-
-            onClick={() => setScreen('label')}
-
-            className={`px-3 py-1 rounded-full text-xs md:text-sm transition ${
-
-              screen === 'label'
-
-                ? 'bg-white shadow-sm text-slate-900'
-
-                : 'bg-transparent text-slate-500'
-
-            }`}
+            }
 
           >
 
-            Label Check
+            <span className={isSoft ? 'text-slate-800 font-bold hn-title' : 'text-white font-bold hn-title'}>HN</span>
 
-          </button>
+          </div>
 
-          <button
+          <div>
 
-            onClick={() => setScreen('passport')}
+            <h1 className={`text-xl font-semibold hn-title ${isSoft ? 'text-slate-900' : 'text-white'}`}>
 
-            className={`px-3 py-1 rounded-full text-xs md:text-sm transition ${
+              Helmsman Nexus
 
-              screen === 'passport'
+            </h1>
 
-                ? 'bg-white shadow-sm text-slate-900'
+            <p className={isSoft ? 'text-sm text-slate-500' : 'text-sm text-slate-300'}>
 
-                : 'bg-transparent text-slate-500'
+              Where Compliance, Data & Distribution Connect
 
-            }`}
+            </p>
 
-          >
-
-            Product Passport
-
-          </button>
+          </div>
 
         </div>
 
 
-        <ThemeToggle theme={theme} setTheme={setTheme} />
+        <div className="flex items-center gap-4">
 
-      </div>
+          <div className="hidden md:flex items-center gap-2 rounded-full bg-slate-100/60 px-1 py-1 border border-slate-200 shadow-sm">
 
-    </header>
+            <button
+
+              onClick={() => setScreen('label')}
+
+              className={`px-3 py-1 rounded-full text-xs md:text-sm transition ${
+
+                screen === 'label'
+
+                  ? 'bg-white shadow-sm text-slate-900'
+
+                  : 'bg-transparent text-slate-500'
+
+              }`}
+
+            >
+
+              Label Check
+
+            </button>
+
+            <button
+
+              onClick={() => setScreen('passport')}
+
+              className={`px-3 py-1 rounded-full text-xs md:text-sm transition ${
+
+                screen === 'passport'
+
+                  ? 'bg-white shadow-sm text-slate-900'
+
+                  : 'bg-transparent text-slate-500'
+
+              }`}
+
+            >
+
+              Product Passport
+
+            </button>
+
+          </div>
+
+
+          <ThemeToggle theme={theme} setTheme={setTheme} />
+
+        </div>
+
+      </header>
+
+     <Footer />
+      
+   </>
 
   );
 

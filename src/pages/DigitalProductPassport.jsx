@@ -14,6 +14,7 @@ import {
   Sparkles,
   ChevronDown,
 } from 'lucide-react';
+import Footer from './Footer.jsx';
 
 // Helmsman Nexus – Digital Product Passport (Soft Glass theme like regulatory templates screen)
 
@@ -226,26 +227,31 @@ export default function DigitalProductPassport() {
       transition={{ duration: 0.6 }}
     >
       {/* Header */}
-      <div className="flex items-center justify-between mb-10">
-        <div>
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-white text-xs font-semibold">
-              HN
-            </span>
-            Helmsman Nexus
-          </h1>
-          <p className="text-xs md:text-sm text-slate-500 mt-1">
-            Digital Product Passport · SKU-level compliance, tax and export history
-          </p>
-        </div>
+      <>
+        <div className="flex items-center justify-between mb-10">
+          <div>
+            <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-white text-xs font-semibold">
+                HN
+              </span>
+              Helmsman Nexus
+            </h1>
+            <p className="text-xs md:text-sm text-slate-500 mt-1">
+              Digital Product Passport · SKU-level compliance, tax and export history
+            </p>
+          </div>
 
-        <div className="flex items-center gap-2 text-xs border border-slate-200 bg-white rounded-full px-3 py-1 shadow-sm">
-          <span className="text-slate-500">Theme</span>
-          <span className="font-semibold text-slate-800 flex items-center gap-1">
-            Soft Glass <ChevronDown className="h-3 w-3 text-slate-400" />
-          </span>
+          <div className="flex items-center gap-2 text-xs border border-slate-200 bg-white rounded-full px-3 py-1 shadow-sm">
+            <span className="text-slate-500">Theme</span>
+            <span className="font-semibold text-slate-800 flex items-center gap-1">
+              Soft Glass <ChevronDown className="h-3 w-3 text-slate-400" />
+            </span>
+          </div>
         </div>
-      </div>
+        
+        <Footer />
+        
+      </>
 
       <div className="grid lg:grid-cols-3 gap-8">
         {/* Left: Section menu */}

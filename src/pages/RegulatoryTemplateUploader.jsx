@@ -13,6 +13,7 @@ import {
   Layers,
   Globe,
 } from 'lucide-react';
+import Footer from './Footer.jsx';
 
 
 export default function RegulatoryTemplateUploader() {
@@ -68,39 +69,44 @@ export default function RegulatoryTemplateUploader() {
       transition={{ duration: 0.8 }}
     >
       {/* Header */}
-      <div className="flex items-center justify-between mb-10">
-        <div>
-          <h1 className="text-2xl font-semibold tracking-tight flex items-center gap-2">
-            <span
-              className={`h-8 w-8 rounded-2xl flex items-center justify-center text-xs font-semibold ${
-                isSoft ? 'bg-slate-900 text-slate-50' : 'bg-indigo-600 text-white'
+      <>
+        <div className="flex items-center justify-between mb-10">
+          <div>
+            <h1 className="text-2xl font-semibold tracking-tight flex items-center gap-2">
+              <span
+                className={`h-8 w-8 rounded-2xl flex items-center justify-center text-xs font-semibold ${
+                  isSoft ? 'bg-slate-900 text-slate-50' : 'bg-indigo-600 text-white'
+                }`}
+              >
+                HN
+              </span>
+              Helmsman Nexus
+            </h1>
+            <p className="text-xs mt-1 text-slate-500">
+              Admin · Upload & manage regulatory export / customs templates
+            </p>
+          </div>
+
+          <div className="flex items-center gap-2 text-xs">
+            <span className="text-slate-500">Theme</span>
+            <select
+              value={theme}
+              onChange={(e) => setTheme(e.target.value)}
+              className={`px-3 py-1 rounded-full border text-xs ${
+                isSoft
+                  ? 'bg-white border-slate-200 text-slate-700 shadow-sm'
+                  : 'bg-slate-900/70 border-indigo-500 text-slate-100'
               }`}
             >
-              HN
-            </span>
-            Helmsman Nexus
-          </h1>
-          <p className="text-xs mt-1 text-slate-500">
-            Admin · Upload & manage regulatory export / customs templates
-          </p>
+              <option value="soft">Soft Glass</option>
+              <option value="neon">Neon Hybrid</option>
+            </select>
+          </div>
         </div>
 
-        <div className="flex items-center gap-2 text-xs">
-          <span className="text-slate-500">Theme</span>
-          <select
-            value={theme}
-            onChange={(e) => setTheme(e.target.value)}
-            className={`px-3 py-1 rounded-full border text-xs ${
-              isSoft
-                ? 'bg-white border-slate-200 text-slate-700 shadow-sm'
-                : 'bg-slate-900/70 border-indigo-500 text-slate-100'
-            }`}
-          >
-            <option value="soft">Soft Glass</option>
-            <option value="neon">Neon Hybrid</option>
-          </select>
-        </div>
-      </div>
+        <Footer />
+        
+      </>
 
       {/* Upload Area */}
       <Card className={`${cardStyle} mb-12`}>{/* outer shell */}
