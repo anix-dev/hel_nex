@@ -49,7 +49,9 @@ export default function DistributorNewtwork() {
       <>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
           <div>
-            <h1 className="text-2xl font-semibold tracking-tight">Helmsman Nexus</h1>
+            <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
+              <img src="/src/assets/logo.png" alt="Helmsman Nexus Logo" className="h-10 w-35" />
+            </h1>
             <p className="text-xs text-slate-500 mt-1">Where Compliance, Data & Distribution Connect</p>
           </div>
           <div className="flex items-center gap-3 text-xs">

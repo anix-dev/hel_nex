@@ -42,11 +42,8 @@ export default function PredictedApprovalTimelineEngine() {
       <>
         <div className="flex items-center justify-between mb-10">
           <div>
-            <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-white text-xs font-semibold">
-                HN
-              </span>
-              Helmsman Nexus
+           <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
+              <img src="/src/assets/logo.png" alt="Helmsman Nexus Logo" className="h-10 w-35" />
             </h1>
             <p className="text-xs md:text-sm text-slate-500 mt-1">
               Admin · Predicted Approval Timeline Engine

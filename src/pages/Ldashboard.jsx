@@ -121,7 +121,9 @@ function Header({ theme, setTheme }) {
 
         <div>
 
-          <h1 className={`text-2xl font-bold ${isSoft ? 'text-slate-800' : 'text-white'}`}>Helmsman Nexus Dashboard</h1>
+         <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
+              <img src="/src/assets/logo.png" alt="Helmsman Nexus Logo" className="h-10 w-35" />
+            </h1>
 
           <p className={`text-sm ${isSoft ? 'text-slate-500' : 'text-slate-400'}`}>Compliance, AI Predictions & Global Readiness</p>
 

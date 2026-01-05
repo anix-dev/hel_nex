@@ -267,53 +267,9 @@ function Header({
    <>
       <header className="flex items-center justify-between relative z-10">
 
-        <div className="flex items-center gap-4">
-
-          <div
-
-            className={
-
-              isSoft
-
-                ? 'w-12 h-12 rounded-2xl glass-card flex items-center justify-center'
-
-                : 'w-12 h-12 rounded-2xl neon-glow flex items-center justify-center'
-
-            }
-
-            style={
-
-              isSoft
-
-                ? {}
-
-                : { background: 'linear-gradient(135deg,#7b2ff7 0%,#00A6FB 100%)' }
-
-            }
-
-          >
-
-            <span className={isSoft ? 'text-slate-800 font-bold hn-title' : 'text-white font-bold hn-title'}>HN</span>
-
-          </div>
-
-          <div>
-
-            <h1 className={`text-xl font-semibold hn-title ${isSoft ? 'text-slate-900' : 'text-white'}`}>
-
-              Helmsman Nexus
-
+        <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
+              <img src="/src/assets/logo.png" alt="Helmsman Nexus Logo" className="h-10 w-35" />
             </h1>
-
-            <p className={isSoft ? 'text-sm text-slate-500' : 'text-sm text-slate-300'}>
-
-              Where Compliance, Data & Distribution Connect
-
-            </p>
-
-          </div>
-
-        </div>
 
 
         <div className="flex items-center gap-4">
