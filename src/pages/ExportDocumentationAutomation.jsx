@@ -5,6 +5,7 @@ import { Input } from '../components/ui/input.jsx';
 import { motion } from 'framer-motion';
 import { FileSpreadsheet, CheckCircle2, Clock, Globe2, Plane, Truck, Download } from 'lucide-react';
 import Footer from './Footer.jsx';
+import logo from "/public/logo.png"
 
 export default function ExportDocumentationAutomation() {
   const [shipmentData, setShipmentData] = useState({ shipmentId: '', sku: '', destination: '', importer: '', template: '' });
@@ -50,7 +51,7 @@ export default function ExportDocumentationAutomation() {
         <div className="flex items-center justify-between mb-8">
           <div>
             <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
-              <img src="/src/assets/logo.png" alt="Helmsman Nexus Logo" className="h-10 w-35" />
+             <img src={logo} alt="Helmsman Nexus Logo" className="h-10 w-35" />
             </h1>
             <p className="text-xs md:text-sm text-slate-500 mt-1">
               Admin · Export Documentation Automation

@@ -4,6 +4,7 @@ import { Button } from '../components/ui/button.jsx';
 import { motion } from 'framer-motion';
 import { Clock, BarChart3, Timer } from 'lucide-react';
 import Footer from './Footer.jsx';
+import logo from "/public/logo.png"
 
 export default function PredictedApprovalTimelineEngine() {
   const [timelines, setTimelines] = useState([]);
@@ -43,7 +44,7 @@ export default function PredictedApprovalTimelineEngine() {
         <div className="flex items-center justify-between mb-10">
           <div>
            <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
-              <img src="/src/assets/logo.png" alt="Helmsman Nexus Logo" className="h-10 w-35" />
+              <img src={logo} alt="Helmsman Nexus Logo" className="h-10 w-35" />
             </h1>
             <p className="text-xs md:text-sm text-slate-500 mt-1">
               Admin · Predicted Approval Timeline Engine

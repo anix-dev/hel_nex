@@ -4,6 +4,7 @@ import { UploadCloud, ShieldCheck, Clock, Globe2, Trash2, Edit3 } from 'lucide-r
 import { Card, CardContent } from '../components/ui/card.jsx';
 import { Button } from '../components/ui/button.jsx';
 import Footer from './Footer.jsx';
+import logo from "/public/logo.png"
 
 // Helmsman Nexus – Regulatory Template Admin (Soft Glass Theme)
 
@@ -34,7 +35,7 @@ export default function RegulatoryTemplateAdmin() {
         <div className="flex items-center justify-between mb-10">
           <div>
            <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
-              <img src="/src/assets/logo.png" alt="Helmsman Nexus Logo" className="h-10 w-35" />
+               <img src={logo} alt="Helmsman Nexus Logo" className="h-10 w-35" />
             </h1>
             <p className="text-xs md:text-sm text-slate-500 mt-1">
               Admin · Upload & manage regulatory export / customs templates

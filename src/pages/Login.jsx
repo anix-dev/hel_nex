@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Footer from './Footer';
+import logo from "/public/logo.png"
 
 
 function Login() {
@@ -89,7 +90,7 @@ function Header({ theme, setTheme }) {
 
         <div className="flex items-center gap-3 mr">
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
-            <img src="/src/assets/logo.png" alt="Helmsman Nexus Logo" className="h-10 w-35" />
+             <img src={logo} alt="Helmsman Nexus Logo" className="h-10 w-35" />
           </h1>
 
         </div>

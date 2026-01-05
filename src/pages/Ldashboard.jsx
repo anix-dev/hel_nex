@@ -4,6 +4,7 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
 import 'react-circular-progressbar/dist/styles.css';
 import Footer from './Footer';
+import logo from "/public/logo.png"
 
 
 // Helmsman Nexus – Segmented Gradient Gauge for Compliance Score
@@ -122,7 +123,7 @@ function Header({ theme, setTheme }) {
         <div>
 
          <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
-              <img src="/src/assets/logo.png" alt="Helmsman Nexus Logo" className="h-10 w-35" />
+              <img src={logo} alt="Helmsman Nexus Logo" className="h-10 w-35" />
             </h1>
 
           <p className={`text-sm ${isSoft ? 'text-slate-500' : 'text-slate-400'}`}>Compliance, AI Predictions & Global Readiness</p>

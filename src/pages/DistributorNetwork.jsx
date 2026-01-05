@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Search, Filter, Globe2, Star, ArrowRight, Building2 } from 'lucide-react';
 import Footer from './Footer';
+import logo from "/public/logo.png"
 
 // Lightweight UI primitives so this file is self-contained
 function Card({ children, className = '' }) {
@@ -50,7 +51,7 @@ export default function DistributorNewtwork() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
           <div>
             <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
-              <img src="/src/assets/logo.png" alt="Helmsman Nexus Logo" className="h-10 w-35" />
+              <img src={logo} alt="Helmsman Nexus Logo" className="h-10 w-35" />
             </h1>
             <p className="text-xs text-slate-500 mt-1">Where Compliance, Data & Distribution Connect</p>
           </div>

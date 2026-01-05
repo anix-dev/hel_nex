@@ -5,6 +5,7 @@ import { Input } from '../components/ui/input.jsx';
 import { motion } from 'framer-motion';
 import { FlaskConical, AlertTriangle, CheckCircle2, XCircle, FileText } from 'lucide-react';
 import Footer from './Footer.jsx';
+import logo from "/public/logo.png"
 
 // Helmsman Nexus – Formula & Ingredient Compliance Engine (Soft Glass Theme)
 // Updated to match attached theme (light background, soft shadows, clean white cards)
@@ -60,7 +61,7 @@ export default function FormulaComplianceEngine() {
         <div className="flex items-center justify-between mb-10">
           <div>
            <h1 className="text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 text-slate-900">
-              <img src="/src/assets/logo.png" alt="Helmsman Nexus Logo" className="h-10 w-35" />
+               <img src={logo} alt="Helmsman Nexus Logo" className="h-10 w-35" />
             </h1>
             <p className="text-xs md:text-sm text-slate-500 mt-1">
               Admin · Formula & Ingredient Compliance Engine
